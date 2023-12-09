@@ -22,6 +22,8 @@ FROM nginx:alpine as webapp
 # Copy the build output from the builder stage to the nginx web root
 COPY --from=builder /app/storybook-static/ /usr/share/nginx/html
 
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+
 # Expose port 80
 EXPOSE 80
 

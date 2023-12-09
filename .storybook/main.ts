@@ -22,9 +22,7 @@ const config: StorybookConfig = {
   },
   staticDirs: ["../public"],
   webpackFinal: async (config, { configType }) => {
-    if (configType === 'PRODUCTION') {
-      config!.output!.publicPath = '/react-components/';
-    }
+    // config!.output!.publicPath = '/react-components';
     return config;
   },
 };
