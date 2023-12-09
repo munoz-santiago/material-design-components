@@ -1,0 +1,68 @@
+/* Reset all margins, paddings, and borders */
+html,
+body,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+form,
+fieldset,
+input,
+textarea,
+legend,
+button,
+figure,
+figcaption,
+table,
+th,
+td,
+caption {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Make sure elements are rendered consistently across browsers */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+/* Remove default list styles */
+ul, ol {
+  list-style: none;
+}
+
+/* Remove underline from hyperlinks */
+a {
+  text-decoration: none;
+}
+
+/* Remove default styling for headings */
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/* Remove default styling for form elements */
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+}

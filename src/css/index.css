@@ -1,0 +1,15 @@
+
+@font-face {
+  font-family: 'PrimaryFont';
+  src: local('PrimaryFont'),
+       url('../assets/fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+}
+
+body {
+  font-family: 'PrimaryFont', sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
