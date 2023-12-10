@@ -8,6 +8,9 @@ docker pull $DOCKER_IMAGE
 docker stop material-design-components-storybook || true
 docker rm -f material-design-components-storybook || true
 
+docker rmi ghcr.io/munoz-santiago/material-design-components/storybook || true
+docker pull ghcr.io/munoz-santiago/material-design-components/storybook
+
 # Run the Docker container on the droplet
 docker run -d --name material-design-components-storybook -p 9002:80 \
     --network traefik_proxy \
