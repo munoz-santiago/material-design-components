@@ -20,7 +20,7 @@ RUN npm run build-storybook
 FROM nginx:alpine as webapp
 
 # Copy the build output from the builder stage to the nginx web root
-COPY --from=builder /app/storybook-static/ /usr/share/nginx/html
+COPY --from=builder /app/storybook-static/ /usr/share/nginx/html/react-components
 
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
