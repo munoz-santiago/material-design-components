@@ -14,5 +14,5 @@ docker pull ghcr.io/munoz-santiago/material-design-components/storybook
 # Run the Docker container on the droplet
 docker run -d --name material-design-components-storybook -p 9002:80 \
     --network traefik_proxy \
-    --label "traefik.http.routers.material-design-components-storybook.rule=PathPrefix(\`/react-components\`)" \
+    --label "traefik.http.routers.material-design-components-storybook.rule=Host(\`react-components.localhost\`) || Host(\`react-components.munoz-santiago.com\`)" \
     ghcr.io/munoz-santiago/material-design-components/storybook
